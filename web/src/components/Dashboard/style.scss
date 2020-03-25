@@ -1,0 +1,103 @@
+@import '../../styles/variables';
+
+.Dashboard {
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+
+        header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 30px 0;
+            margin-bottom: 50px;
+
+            .logo {
+                width: 140px;
+                height: auto;
+                display: block;
+                margin-right: 50px;
+            }
+
+            .greetings {
+                font-size: 18px;
+                color: $color-text-dark;
+            }
+
+            .buttonPrimary {
+                width: auto;
+                margin-left: auto;
+                padding: 18px 48px;
+                text-decoration: none;
+            }
+
+            .logout {
+                margin-left: 25px;
+                width: 60px;
+                height: 60px;
+                border-radius: 8px;
+                border: solid 1px #DCDCE6;
+                padding: 20px;
+                transition: all .3s ease;
+
+                &:hover {
+                    background-color: rgba(0,0,0,0.07);
+                }
+            }
+        }
+
+        .incidents {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+
+            .incident {
+                background: #FFFFFF;
+                border-radius: 8px;
+                position: relative;
+                padding: 32px;
+
+                .delete {
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    background: none;
+                    border: none;
+
+                    svg {
+                        transition: all .3s ease;
+                    }
+
+                    &:hover {
+                        svg {
+                            color: $color-primary !important;
+                        }
+                    }
+                }
+
+                .infoGroup {
+                    .label {
+                        font-weight: bold;
+                        font-size: 14px;
+                        color: $color-text-dark;
+                        margin-bottom: 1em;
+                    }
+
+                    .text {
+                        color: $color-text-light;
+                        font-size: 18px;
+                        line-height: 1.4em;
+                    }
+
+                    & + .infoGroup {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.Login {
+    
+    .container {
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        min-height: 100vh;
+        align-items: center;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    .logo {
+        margin-bottom: 100px;
+    }
+
+    form {
+        max-width: 350px;
+    }
+}
