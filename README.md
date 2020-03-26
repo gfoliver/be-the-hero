@@ -1,3 +1,4 @@
+![Be The Hero](https://repository-images.githubusercontent.com/249428924/95608980-6f9a-11ea-984e-bd1305408dcc)
 # Be The Hero
 
 An application to help users find non gonvernamental orgs to support
