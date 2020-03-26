@@ -10,7 +10,7 @@ module.exports = {
             .first()
 
         if (org)
-            return res.json({status: true, name: org})
+            return res.json({status: true, name: org.name})
         else
             return res.status(400).json({
                 status: false,
